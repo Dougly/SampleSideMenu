@@ -31,14 +31,15 @@ class SideMenuView: UIView {
         Bundle.main.loadNibNamed("SideMenuView", owner: self, options: nil)
         self.addSubview(contentView)
         self.constrain(contentView)
-        
-        let constraintMultiplier: CGFloat = 0.75 * 0.2
-        let cornerRadius = (UIScreen.main.bounds.height * constraintMultiplier) / 2
-        profilePictureImageView.layer.cornerRadius = cornerRadius
+    
         profilePictureImageView.layer.borderColor = UIColor.white.cgColor
         profilePictureImageView.layer.borderWidth = 1
         
-        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "SideMenuCell")
+        self.tableView.register(SideMenuCell.self, forCellReuseIdentifier: "SideMenuCell")
+    }
+    
+    func setCornerRadius() {
+        profilePictureImageView.layer.cornerRadius = profilePictureImageView.frame.height / 2
     }
     
 }
