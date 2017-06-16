@@ -19,6 +19,7 @@
 		1138D0D91EF37D430085EBC3 /* SideMenuCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138D0D81EF37D430085EBC3 /* SideMenuCellView.swift */; };
 		1138D0DB1EF37F640085EBC3 /* SideMenuCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1138D0DA1EF37F640085EBC3 /* SideMenuCellView.xib */; };
 		1138D0E01EF446AB0085EBC3 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138D0DF1EF446AB0085EBC3 /* SampleData.swift */; };
+		1138D0E21EF4537E0085EBC3 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1138D0E11EF4537E0085EBC3 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		1138D0D81EF37D430085EBC3 /* SideMenuCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuCellView.swift; sourceTree = "<group>"; };
 		1138D0DA1EF37F640085EBC3 /* SideMenuCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SideMenuCellView.xib; sourceTree = "<group>"; };
 		1138D0DF1EF446AB0085EBC3 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
+		1138D0E11EF4537E0085EBC3 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				1138D0DF1EF446AB0085EBC3 /* SampleData.swift */,
+				1138D0E11EF4537E0085EBC3 /* UIColorExtension.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				1138D0CF1EF36CE60085EBC3 /* SideMenuView.swift in Sources */,
 				1138D0BD1EF34A0E0085EBC3 /* ViewController.swift in Sources */,
 				1138D0D11EF372DA0085EBC3 /* UIViewExtension.swift in Sources */,
+				1138D0E21EF4537E0085EBC3 /* UIColorExtension.swift in Sources */,
 				1138D0D91EF37D430085EBC3 /* SideMenuCellView.swift in Sources */,
 				1138D0BB1EF34A0E0085EBC3 /* AppDelegate.swift in Sources */,
 				1138D0D51EF37C470085EBC3 /* SideMenuCell.swift in Sources */,
