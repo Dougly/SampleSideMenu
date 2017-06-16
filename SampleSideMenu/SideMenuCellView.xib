@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SideMenuCellView" customModule="SampleSideMenu" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="Po8-hF-Onr" id="6dj-fG-oZ8"/>
+                <outlet property="optionLabel" destination="u9D-ht-aEY" id="Scy-MC-r5F"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Po8-hF-Onr">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u9D-ht-aEY">
+                    <rect key="frame" x="37.5" y="0.5" width="300" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.14706307869999999" green="0.14706307869999999" blue="0.14706307869999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="u9D-ht-aEY" firstAttribute="centerX" secondItem="Po8-hF-Onr" secondAttribute="centerX" id="Etw-LY-cza"/>
+                <constraint firstItem="u9D-ht-aEY" firstAttribute="height" secondItem="Po8-hF-Onr" secondAttribute="height" id="hC0-Ll-nbT"/>
+                <constraint firstItem="u9D-ht-aEY" firstAttribute="centerY" secondItem="Po8-hF-Onr" secondAttribute="centerY" id="wHp-X3-5fB"/>
+                <constraint firstItem="u9D-ht-aEY" firstAttribute="width" secondItem="Po8-hF-Onr" secondAttribute="width" multiplier="0.8" id="yMK-nI-GXh"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
