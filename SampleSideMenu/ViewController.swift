@@ -93,6 +93,20 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        switch indexPath.row {
+        case 0, 4:
+            break
+        default:
+            let cell = tableView.cellForRow(at: indexPath) as! SideMenuCell
+            let initialColor = cell.sideMenuCellView.contentView.backgroundColor
+            cell.sideMenuCellView.contentView.backgroundColor = .gray
+            UIView.animate(withDuration: 0.5, delay: 0, options: [.curveEaseInOut], animations: {
+                cell.sideMenuCellView.contentView.backgroundColor = initialColor
+                self.view.layoutIfNeeded()
+            }, completion: nil)
+        }
+        
         switch indexPath.row {
         case 0:
             if renterIsCollapsed {
