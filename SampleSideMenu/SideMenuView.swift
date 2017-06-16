@@ -15,6 +15,7 @@ class SideMenuView: UIView {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var profilePictureImageView: UIImageView!
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var headerViewTopConstraint: NSLayoutConstraint!
     
     
     override init(frame: CGRect) {
@@ -31,11 +32,10 @@ class SideMenuView: UIView {
         Bundle.main.loadNibNamed("SideMenuView", owner: self, options: nil)
         self.addSubview(contentView)
         self.constrain(contentView)
-    
+        headerViewTopConstraint.constant = UIApplication.shared.statusBarFrame.height
         profilePictureImageView.layer.borderColor = UIColor.white.cgColor
         profilePictureImageView.layer.borderWidth = 1
-        
-        self.tableView.register(SideMenuCell.self, forCellReuseIdentifier: "SideMenuCell")
+        tableView.register(SideMenuCell.self, forCellReuseIdentifier: "SideMenuCell")
     }
     
     func setCornerRadius() {

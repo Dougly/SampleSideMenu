@@ -12,5 +12,4 @@ class SampleData {
     
     let menuItems: [String] = ["Renter", "MostPopular", "Request A Listing", "ManageRentals", "Provider", "Recent Requsts", "Create A Listing", "Manage Inquiries", "Refferals", "Settings", "Faq"]
     
-    
 }

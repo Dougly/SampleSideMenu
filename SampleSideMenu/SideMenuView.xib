@@ -15,6 +15,7 @@
             <connections>
                 <outlet property="contentView" destination="iN0-l3-epB" id="z2b-eG-gXQ"/>
                 <outlet property="headerView" destination="bad-FD-nNW" id="TkY-zZ-wsN"/>
+                <outlet property="headerViewTopConstraint" destination="3Tn-qj-eYV" id="kIj-vw-Wr8"/>
                 <outlet property="nameLabel" destination="XBu-Yv-iaO" id="bGP-ek-fmR"/>
                 <outlet property="profilePictureImageView" destination="fbY-7v-bbI" id="XG8-He-QHU"/>
                 <outlet property="tableView" destination="XjN-6T-4BX" id="X5g-WY-rbd"/>
@@ -25,6 +26,10 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jpt-pT-U0V" userLabel="TopMarginView">
+                    <rect key="frame" x="-0.5" y="0.0" width="375" height="0.0"/>
+                    <color key="backgroundColor" red="0.14706307869999999" green="0.14706307869999999" blue="0.14706307869999999" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bad-FD-nNW">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
                     <subviews>
@@ -45,7 +50,7 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" red="0.14706307868306889" green="0.14706307868306889" blue="0.14706307868306889" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.076895638381697662" green="0.076895638381697662" blue="0.076895638381697662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstItem="fbY-7v-bbI" firstAttribute="height" secondItem="bad-FD-nNW" secondAttribute="height" multiplier="0.6" id="9NQ-LQ-1UL"/>
                         <constraint firstItem="rsf-x0-xhU" firstAttribute="height" secondItem="bad-FD-nNW" secondAttribute="height" multiplier="0.01" id="J8N-wV-wwe"/>
@@ -61,17 +66,21 @@
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XjN-6T-4BX">
                     <rect key="frame" x="0.0" y="167" width="375" height="500"/>
-                    <color key="backgroundColor" red="0.14706307869999999" green="0.14706307869999999" blue="0.14706307869999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="backgroundColor" red="0.076895638380000006" green="0.076895638380000006" blue="0.076895638380000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="bad-FD-nNW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3Tn-qj-eYV"/>
                 <constraint firstItem="bad-FD-nNW" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="58x-Mp-yqE"/>
+                <constraint firstItem="jpt-pT-U0V" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="GWq-gl-B2j"/>
                 <constraint firstItem="bad-FD-nNW" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.25" id="NKF-XL-utz"/>
                 <constraint firstItem="XjN-6T-4BX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SCs-fH-7zy"/>
+                <constraint firstItem="jpt-pT-U0V" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="cUE-tj-Dcn"/>
                 <constraint firstItem="XjN-6T-4BX" firstAttribute="bottom" secondItem="iN0-l3-epB" secondAttribute="bottom" id="gJF-XV-cW6"/>
                 <constraint firstItem="XjN-6T-4BX" firstAttribute="top" secondItem="bad-FD-nNW" secondAttribute="bottom" id="n09-FS-04q"/>
+                <constraint firstItem="jpt-pT-U0V" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="pJT-GI-Ldc"/>
+                <constraint firstItem="jpt-pT-U0V" firstAttribute="bottom" secondItem="bad-FD-nNW" secondAttribute="top" id="rGb-22-wA4"/>
                 <constraint firstItem="bad-FD-nNW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rQG-dI-zuy"/>
                 <constraint firstItem="XjN-6T-4BX" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="u6D-7P-ISG"/>
             </constraints>

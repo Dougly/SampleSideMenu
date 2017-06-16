@@ -25,5 +25,6 @@ class SideMenuCell: UITableViewCell {
     func commonInit() {
         self.contentView.addSubview(sideMenuCellView)
         self.contentView.constrain(sideMenuCellView)
+        self.selectionStyle = .none
     }
 }
